@@ -5,20 +5,16 @@ int main()
     scanf("%d",&n);
     while(n/i>0)
     {
-
         if(n%i==0)
         {
             printf("%d\n",i);
             n=n/i;
-
         }
-        else if(n%i!=0)
+        else
         {
             i++;
         }
-
     }
     printf("0");
-
     return 0;
 }
