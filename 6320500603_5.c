@@ -1,24 +1,29 @@
 #include<stdio.h>
 int main()
 {
-    int b,i,j,n,a[3];
+    int a,b[3],c,i=2,j=0,n;
     scanf("%d",&n);
-    for(i=0;i<3;i++)
+    a=n;
+    while(1)
     {
-        j=2;
-        a[i]=n/j;
-        b=n/j;
-    }
-    for(i=0;i<3;i++)
-    {
-        if(a[i]!=a[i+1])
+        if(a%i==0)
         {
-            printf("%d is a Lucky Number.",n);
+            c++;
         }
         else
         {
+            break;
+        }
+        i++;
+    }
+
+        if(c>3||c<3)
+        {
             printf("%d is not a Lucky Number.",n);
         }
-    }
+        else
+        {
+            printf("%d is a Lucky Number.",n);
+        }
     return 0;
 }
